@@ -1,14 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>JavaScript Default WEB</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Source+Sans+Pro:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cvičení -  Lekce 10</title>
 </head>
 <body>
+    
+<main>
+    <div class="banner">
+        <div class="odkazy">
+            <a href="index.html">Přihlášení</a>
+        </div>
+    </div>
 
-	<script src="main.js"></script>
+    <div class="prihlaseni">
+        <h1>Přihlášení</h1>
+        <p>Vytvořte klasický přihlašovací formulář, do kterého uživatel zadá svůj e-mail a heslo a stránka ověří, zda má 
+        uživatel přístup do systému. Postupujte podle instrukcí níže.</p>
+        <ul>
+            <li>a) Vytvořte stránku s formulářem, který bude mít jedno textové pole pro e-mail (typ <code>email</code>), jedno pole 
+                pro heslo (typ <code>password</code>) a tlačítko „Přihlásit“.</li>
+            <li>b) Na začátek souboru <code>index.js</code> vložte následující objekt představující jednoho uživatele. Budeme 
+                se tvářit, že jsme jej získali například z databáze.</li>
+                <img src="assets/prihlaseni.png" alt="">
+            <li>c) Při kliknutí na tlačítko „Přihlásit“ ověřte, že uživatel zadal správné jméno a heslo. 
+                Pokud údaje souhlasí, nahraďte formulář na stránce nějakou zprávou, například „Přihlášený uživatel: Bartoloměj“.</li>
+            <li>d) Pokud uživatel zadal špatný e-mail nebo heslo, zobrazte ve formuláři výraznou zprávu „Neplatné 
+                přihlašovací údaje“. Zadaný e-mail nechte v políčku vyplněný. Vyplněné heslo naopak vymažte.</li>
+        </ul>
+        <p>Všimněte si, že se snažíme dodržovat standardní praxi. Uživatel by neměl vědět, 
+        jestli zadal špatně heslo nebo e-mail. Nikdo by totiž neměl bý schopný zjistit, jestli v 
+        systému daný uživatel už existuje. Zároveň je dobré špatné heslo z políčka vymazat, aby 
+        jej mohl uživatel rovnou zkusit napsat znovu.</p>
+        <div class="formular1">
+            <form class="formular2">
+                <div class="mb-3">
+                  <label for="Email1" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="Password1" class="form-label">Heslo</label>
+                  <input type="password" class="form-control" id="Password1">
+                </div>
+                <button onclick="prihlaseni(event)" type="submit" class="btn btn-primary">Přihlásit se</button>
+                <span id="spatneUdaje"></span>
+              </form>
+              <span id="spravneUdaje"></span>
+        </div>
+    </div>
+
+
+</main>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </body>
 </html>

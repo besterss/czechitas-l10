@@ -1,0 +1,113 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  main .banner {
+    border: solid 1px lightgray;
+    width: 95%;
+    margin: auto;
+    height: 500px;
+    background-image: url("../assets/czechitas.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+  }
+  main .banner .odkazy {
+    width: 450px;
+    position: absolute;
+    top: 450px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  main .banner .odkazy a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  main .auto, main .prihlaseni, main .newsletterKontrola {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+  }
+  main .auto li, main .prihlaseni li, main .newsletterKontrola li {
+    list-style-type: none;
+  }
+  main .auto code, main .prihlaseni code, main .newsletterKontrola code {
+    background-color: #d8d8d8;
+  }
+  main .auto .jizdniPlocha {
+    border: solid 1px red;
+    width: 50%;
+    height: 450px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .auto .jizdniPlocha img {
+    border: solid green;
+    height: 100px;
+  }
+  main .auto .mimoHranice {
+    border: solid 1px red;
+  }
+  main .prihlaseni img {
+    margin: auto;
+    display: flex;
+  }
+  main .prihlaseni .formular1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 70px;
+  }
+  main .prihlaseni .formular1 button {
+    margin: auto;
+    display: flex;
+  }
+  main .prihlaseni .formular1 #spatneUdaje, main .prihlaseni .formular1 #spravneUdaje {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  main .prihlaseni .zmizeni {
+    display: none;
+  }
+  main .prihlaseni .spravnePrihlaseni {
+    color: green;
+  }
+  main .prihlaseni .spatnePrihlaseni1 {
+    color: red;
+  }
+  main .prihlaseni .spatnePrihlaseni2 {
+    border-color: red;
+  }
+  main .newsletterKontrola {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 70px;
+  }
+  main .newsletterKontrola button {
+    margin: auto;
+    display: flex;
+  }
+  main .newsletterKontrola #spatneUdaje, main .newsletterKontrola #spravneUdaje {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
